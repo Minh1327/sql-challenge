@@ -1,7 +1,6 @@
 -- Create a new schema named HR in postgres default database.
 CREATE SCHEMA HR;
 
-
 CREATE TABLE hr.employees (
     emp_no INT PRIMARY KEY,
     emp_title_id VARCHAR(5),
@@ -52,8 +51,6 @@ CREATE TABLE hr.salaries (
 );
 
 -- Import data from CSV files to Postgres table
-
-
 COPY hr.titles(title_id, title)
 FROM 'D:\Monash bootcamp\Git\sql-challenge\data\titles.csv'
 DELIMITER ','
